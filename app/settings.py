@@ -85,7 +85,7 @@ DATABASES = {
         "NAME": "djangodocker",
         "USER": "djangodocker",
         "PASSWORD": "djangodocker",
-        'HOST': 'db',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
         'CHARSET': 'utf8',
         'COLLATION': 'utf8_unicode_ci',
@@ -136,3 +136,10 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "djangodocker_static")
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+
+#
+
+try:
+    from app.local_settings import *
+except ImportError:
+    pass

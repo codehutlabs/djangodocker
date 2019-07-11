@@ -18,6 +18,7 @@ ENV WEBAPP_DIR=/var/www/djangodocker
 WORKDIR $WEBAPP_DIR
 
 ADD . $WEBAPP_DIR/
+COPY  app/docker_settings.py app/local_settings.py
 
 RUN chmod +x docker-compose-entrypoint.sh
 RUN chmod +x docker-entrypoint.sh
