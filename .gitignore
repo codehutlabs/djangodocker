@@ -90,4 +90,5 @@ ENV/
 .ropeproject
 
 .idea/
+.vscode/
 local_settings.py
