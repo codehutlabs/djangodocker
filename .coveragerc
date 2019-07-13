@@ -7,4 +7,5 @@ omit =
     *migrations/*,
     *htmlcov/*,
     *templates/*,
+    *tests/*,
     manage.py
