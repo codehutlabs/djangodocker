@@ -25,7 +25,7 @@ SECRET_KEY = '432+0go&oo923x@w+gj@+8di&*$ci(+dt3n6#(8hd$j&2w10t)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.codehutlabs.io', 'localhost', '0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = ['.codehut.io', '.codehutlabs.io', 'localhost', '0.0.0.0', '127.0.0.1']
 
 # Application definition
 
