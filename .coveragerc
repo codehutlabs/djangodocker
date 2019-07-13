@@ -2,10 +2,9 @@
 omit =
     *__init__.py,
     *wsgi.py,
+    *urls.py,
+    *settings*,
     *migrations/*,
     *htmlcov/*,
     *templates/*,
-    *settings*,
-    *tests/*,
-    *urls.py,
     manage.py
