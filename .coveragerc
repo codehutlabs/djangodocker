@@ -3,6 +3,8 @@ omit =
     *__init__.py,
     *wsgi.py,
     *migrations/*,
+    *htmlcov/*,
+    *templates/*,
     *settings*,
     *tests/*,
     *urls.py,
