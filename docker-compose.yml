@@ -12,7 +12,6 @@ services:
     ports:
       - 3305:3306
     volumes:
-      - ./dump:/docker-entrypoint-initdb.d
       - data_volume:/var/lib/mysql
 
   phpmyadmin:

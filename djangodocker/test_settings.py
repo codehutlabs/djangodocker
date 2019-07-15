@@ -1,4 +1,4 @@
-from app.settings import *
+from djangodocker.settings import *
 
 
 DATABASES = {

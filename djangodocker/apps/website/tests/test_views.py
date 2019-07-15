@@ -2,7 +2,7 @@ from django.test import RequestFactory
 from django.urls import reverse
 from django.contrib.auth.models import User
 from mixer.backend.django import mixer
-from website.views import home
+from djangodocker.apps.website.views import home
 
 import pytest
 

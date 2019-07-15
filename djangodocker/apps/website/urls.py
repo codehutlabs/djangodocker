@@ -1,6 +1,6 @@
 from django.urls import path
 
-from website import views
+from djangodocker.apps.website import views
 
 
 urlpatterns = [

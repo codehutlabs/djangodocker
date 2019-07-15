@@ -1,4 +1,4 @@
-from website.utils import add
+from djangodocker.apps.website.utils import add
 import pytest
 
 

@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'djangodocker.apps.website',
 ]
 
 MIDDLEWARE = [
@@ -48,14 +50,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'app.urls'
+ROOT_URLCONF = 'djangodocker.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, "templates"),
-            os.path.join(BASE_DIR, "website", "templates"),
+            os.path.join(BASE_DIR, "djangodocker", "templates"),
+            os.path.join(BASE_DIR, "djangodocker", "apps", "website", "templates"),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -69,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'app.wsgi.application'
+WSGI_APPLICATION = 'djangodocker.wsgi.application'
 
 
 # Database
@@ -140,6 +142,6 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 #
 
 try:
-    from app.local_settings import *
+    from djangodocker.local_settings import *
 except ImportError:
     pass
